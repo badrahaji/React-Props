@@ -1,8 +1,10 @@
 /* style for the App classname */
 body{
     background-image:  url("./img/stade.png") ;
-
 text-align: center;
+color: red;
+font: bold;
+font-size: 18px;
 }
 /* player card style*/
 .player{
@@ -14,7 +16,6 @@ text-align: center;
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.18) ; 
     opacity: 100%;
-    width: 300px;
 
     display: flex;
     flex-direction: column;
@@ -24,21 +25,19 @@ text-align: center;
     color: white;
 
 }
-.player .img img {
-mix-blend-mode: multiply;
-}
-/* player image*/ 
+/* my player card animation when mouse over */
 .player:hover{
-    transform: rotatey(20deg) rotateX(-20deg);
-    transition: 0.5s;
+    transform: rotatey(20deg) rotateX(-10deg);
     
+    transition: 0.5s;
+
 }
 /* player list style */
 .playerList{
+    margin-left: 30px;
     text-align: center;
-    gap: 50px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 220px 220px 220px 220px;
     justify-content: space-evenly;
     font-size: 30px;
     font-weight: 600px;

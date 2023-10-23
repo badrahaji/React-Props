@@ -7,7 +7,7 @@ const Player = ({ name, team, nationality, jerseyNumber, age, src }) => {
   return (
     
     <Card className="player" >
-      <Card.Img variant="top" src={src} style={{height:"300px"}} className="img"/>
+      <Card.Img variant="top" src={src} style={{height:"250px"}} className="img"/>
       <Card.Body>
         <Card.Title className="name" style={{marginTop:"10px"}}> {name}</Card.Title>
         <Card.Text style={{justifyContent:"space-evenly"}}>
