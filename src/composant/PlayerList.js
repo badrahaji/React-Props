@@ -8,7 +8,7 @@ const PlayersList = () => {
     <div className="playerList">
       {/* mapping throw the players into player */}
             {players.map((player) => (
-        <Player key={player.name} {...player} />
+        <Player {...player} />
       ))}
     </div>
   );

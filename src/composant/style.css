@@ -1,18 +1,13 @@
 /* style for the App classname */
-.App{
+body{
     background-image:  url("./img/stade.png") ;
 
 text-align: center;
-margin: 0px;
-
 }
-
-body{
-    background-color:green;
-}
-
 /* player card style*/
 .player{
+    
+    transition: 0.3s;
     background-color:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
@@ -23,17 +18,20 @@ body{
 
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 2px solid green;
     text-align: center;
     font-size: 60;
     color: white;
 
 }
+.player .img img {
+mix-blend-mode: multiply;
+}
 /* player image*/ 
-.player .img{
-    width: 16rem;
-    justify-content: center;
-    align-items: center;
+.player:hover{
+    transform: rotatey(20deg) rotateX(-20deg);
+    transition: 0.5s;
+    
 }
 /* player list style */
 .playerList{
